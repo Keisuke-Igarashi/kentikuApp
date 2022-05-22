@@ -30,6 +30,7 @@ h2 {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s;
+    z-index: 100;
 
     &:hover {
         // background-color: black;
@@ -47,6 +48,7 @@ h2 {
     height: 100px;
     letter-spacing: 10px;
     position: absolute;
+    z-index: 10;
 
     & #samne_child1 {
         display: inline-block;

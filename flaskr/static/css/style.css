@@ -27,6 +27,7 @@ h2 {
   cursor: pointer;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  z-index: 100;
 }
 
 .btn:hover {
@@ -42,6 +43,7 @@ h2 {
   height: 100px;
   letter-spacing: 10px;
   position: absolute;
+  z-index: 10;
 }
 
 #samne_parent #samne_child1 {
