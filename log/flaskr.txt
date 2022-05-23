@@ -1,0 +1,36 @@
+        echo: off
+         eqp: off
+     explain: auto
+     headers: off
+        mode: list
+   nullvalue: ""
+      output: /Users/keisukeigarashi/PycharmProjects/KentikuApp/log/flaskr.txt
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width: 
+    filename: instance/flaskr.sqlite
+        echo: off
+         eqp: off
+     explain: auto
+     headers: off
+        mode: list
+   nullvalue: ""
+      output: /Users/keisukeigarashi/PycharmProjects/KentikuApp/log/flaskr.txt
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width: 
+    filename: instance/flaskr.sqlite
+        echo: off
+         eqp: off
+     explain: auto
+     headers: off
+        mode: list
+   nullvalue: ""
+      output: /Users/keisukeigarashi/PycharmProjects/KentikuApp/log/flaskr.txt
+colseparator: "|"
+rowseparator: "\n"
+       stats: off
+       width: 
+    filename: instance/flaskr.sqlite
