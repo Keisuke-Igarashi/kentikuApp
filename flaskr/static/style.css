@@ -1,74 +1,26 @@
-h2 {
-  text-align: center;
-  margin: auto;
-  position: absolute;
-  background-color: #151e51;
-  color: white;
-  width: 100%;
-}
-
-.header {
-  position: relative;
-  top: 50px;
-}
-
-.header form {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-}
-
-.btn {
-  background-color: white;
-  color: black;
-  border: 1px solid black;
-  padding: 10px 40px;
-  font-weight: 600;
-  cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  z-index: 100;
-}
-
-.btn:hover {
-  -webkit-box-shadow: 3px 4px 4px 1px #0000009c;
-          box-shadow: 3px 4px 4px 1px #0000009c;
-}
-
-#samne_parent {
-  text-align: center;
-  padding: auto;
-  display: inline;
-  width: 250px;
-  height: 100px;
-  letter-spacing: 10px;
-  position: absolute;
-  z-index: 10;
-}
-
-#samne_parent #samne_child1 {
-  display: inline-block;
-  background-image: url(../image/tadao_ando_hikarino_kyoukai.png);
-  width: 400px;
-  height: 300px;
-  background-size: cover;
-  position: relative;
-  top: 60px;
-}
-
-#samne_parent #samne_child2 {
-  display: inline-block;
-  background-image: url(../image/kumakengo_staba.png);
-  width: 400px;
-  height: 300px;
-  background-size: cover;
-  position: absolute;
-  top: 60px;
-  left: 420px;
-}
-
-.kensaku {
-  position: relative;
-  top: 330px;
-}
-/*# sourceMappingURL=style.css.map */
+html { font-family: sans-serif; background: #eee; padding: 1rem; }
+body { max-width: 960px; margin: 0 auto; background: white; }
+h1 { font-family: serif; color: #377ba8; margin: 1rem 0; }
+a { color: #377ba8; }
+hr { border: none; border-top: 1px solid lightgray; }
+nav { background: lightgray; display: flex; align-items: center; padding: 0 0.5rem; }
+nav h1 { flex: auto; margin: 0; }
+nav h1 a { text-decoration: none; padding: 0.25rem 0.5rem; }
+nav ul  { display: flex; list-style: none; margin: 0; padding: 0; }
+nav ul li a, nav ul li span, header .action { display: block; padding: 0.5rem; }
+.content { padding: 0 1rem 1rem; }
+.content > header { border-bottom: 1px solid lightgray; display: flex; align-items: flex-end; }
+.content > header h1 { flex: auto; margin: 1rem 0 0.25rem 0; }
+.flash { margin: 1em 0; padding: 1em; background: #cae6f6; border: 1px solid #377ba8; }
+.post > header { display: flex; align-items: flex-end; font-size: 0.85em; }
+.post > header > div:first-of-type { flex: auto; }
+.post > header h1 { font-size: 1.5em; margin-bottom: 0; }
+.post .about { color: slategray; font-style: italic; }
+.post .body { white-space: pre-line; }
+.content:last-child { margin-bottom: 0; }
+.content form { margin: 1em 0; display: flex; flex-direction: column; }
+.content label { font-weight: bold; margin-bottom: 0.5em; }
+.content input, .content textarea { margin-bottom: 1em; }
+.content textarea { min-height: 12em; resize: vertical; }
+input.danger { color: #cc2f2e; }
+input[type=submit] { align-self: start; min-width: 10em; }
