@@ -19,6 +19,7 @@ def register():
         password = request.form['password']
 
         db = get_db()
+        cursor = db.cursor()
         error = None
 
         if not username:
@@ -28,11 +29,13 @@ def register():
 
         if error is None:
             try:
-                db.execute(
+                cursor.execute(
                     "INSERT INTO user (username, password) VALUES (?, ?)",
                     (username, generate_password_hash(password)),
                 )
-                db.commit
+                db.commit()
+                db.close()
+                
             except db.IntegrityError:
 
                 # f-strings(python3.6からの機能)
