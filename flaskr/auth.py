@@ -20,6 +20,7 @@ def register():
 
         db = get_db()
         cursor = db.cursor()
+
         error = None
 
         if not username:
@@ -57,11 +58,16 @@ def login():
         password = request.form['password']
 
         db = get_db()
+        cursor = db.cursor()
         error = None
-        user = db.execute(
+        user_execute = cursor.execute(
 
             # fetchoneでクエリから1行を返却する。なかった場合はNoneを返却する
-            'SELECT * FROM user WHERE username = ?', (username,)).fetchone()
+            "SELECT * FROM user WHERE username = ?", (username,)
+            
+        )
+
+        user = user_execute.fetchone()
         
         if user is None:
             error = 'Incorrect username.'
